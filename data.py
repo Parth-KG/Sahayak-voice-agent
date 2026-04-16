@@ -38,7 +38,7 @@ SCHEMES = [
 ]
 
 print("Loading embedding model (this takes a moment on first run)...")
-embedder = SentenceTransformer("all-MiniLM-L6-v2")
+embedder = SentenceTransformer("all-MiniLM-L6-v2", device='cpu')
 qdrant = QdrantClient(":memory:")  # Runs fast in-memory for this setup
 
 
